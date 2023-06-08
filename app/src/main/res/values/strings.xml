@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ColorSearch</string>
+    <string name="header_main">Утиліти для керування кольорами</string>
+
+    <string name="util1">Протилежний колір</string>
+    <string name="util2">Конвертація RGB до HEX</string>
+
+    <string name="header_opposite">Утиліта для протилежного кольору</string>
+    <string name="back">Повернутись назад</string>
+    <string name="input">Початковий колір</string>
+    <string name="output">Вихідний колір</string>
+    <string name="convert">Конвертувати</string>
+
+    <string name="converter">Утиліта конвертування RGB до HEX</string>
+    <string name="red">Червоний</string>
+    <string name="green">Зелений</string>
+    <string name="blue">Синій</string>
+    <string name="result">Результат</string>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".OppositeColorActivity">
+
+    <TextView
+        android:id="@+id/header_opposite_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_opposite_color"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/header_opposite" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/back" />
+
+    <EditText
+        android:id="@+id/input_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:hint="@string/input"
+        android:textColorHint="@color/hint"
+        android:autofillHints=""
+        />
+
+    <EditText
+        android:id="@+id/output_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:hint="@string/output"
+        android:inputType="text"
+        android:textColorHint="@color/hint"
+        android:clickable="false"
+        android:textSize="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convert"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:text="@string/convert" />
+
+</LinearLayout>

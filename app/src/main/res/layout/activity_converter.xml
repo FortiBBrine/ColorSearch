@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ConverterActivity">
+
+    <TextView
+        android:id="@+id/converter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_opposite_color"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/converter" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_opposite_color"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/red" />
+
+    <SeekBar
+        android:id="@+id/red"
+        android:max="255"
+        android:progress="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_opposite_color"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/green" />
+
+    <SeekBar
+        android:id="@+id/green"
+        android:max="255"
+        android:progress="125"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_opposite_color"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/blue" />
+
+    <SeekBar
+        android:id="@+id/blue"
+        android:max="255"
+        android:progress="225"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:autofillHints=""
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textColorHint="@color/hint"
+        android:textSize="25sp"
+        android:hint="@string/result" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/convert"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:text="@string/convert" />
+
+</LinearLayout>
