@@ -25,10 +25,70 @@ public class ConverterActivity extends AppCompatActivity {
 
         MaterialButton convert = findViewById(R.id.convert);
 
+        SeekBar red = findViewById(R.id.red);
+        SeekBar green = findViewById(R.id.green);
+        SeekBar blue = findViewById(R.id.blue);
+
+        TextView redTextView = findViewById(R.id.red_text);
+        TextView greenTextView = findViewById(R.id.green_text);
+        TextView blueTextView = findViewById(R.id.blue_text);
+
+        redTextView.setText(String.format("%s [%d]", getString(R.string.red), red.getProgress()));
+        greenTextView.setText(String.format("%s [%d]", getString(R.string.green), green.getProgress()));
+        blueTextView.setText(String.format("%s [%d]", getString(R.string.blue), blue.getProgress()));
+
+        red.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                redTextView.setText(String.format("%s [%d]", getString(R.string.red), red.getProgress()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        green.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                greenTextView.setText(String.format("%s [%d]", getString(R.string.green), green.getProgress()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        blue.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                blueTextView.setText(String.format("%s [%d]", getString(R.string.blue), blue.getProgress()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
         convert.setOnClickListener(view -> {
-            SeekBar red = findViewById(R.id.red);
-            SeekBar green = findViewById(R.id.green);
-            SeekBar blue = findViewById(R.id.blue);
 
             int redColor = red.getProgress();
             int blueColor = blue.getProgress();
