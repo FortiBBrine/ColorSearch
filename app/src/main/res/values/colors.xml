@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="header_main">#ff115c</color>
     <color name="header_opposite_color">#ff115c</color>
+    <color name="header_converter">#ff115c</color>
+    <color name="header_color_choose">#ff115c</color>
     <color name="hint">#A1887F</color>
 </resources>

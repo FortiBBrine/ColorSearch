@@ -4,6 +4,7 @@
 
     <string name="util1">Протилежний колір</string>
     <string name="util2">Конвертація RGB до HEX</string>
+    <string name="util3">Вибір кольору</string>
 
     <string name="header_opposite">Утиліта для протилежного кольору</string>
     <string name="back">Повернутись назад</string>
@@ -17,4 +18,6 @@
     <string name="blue">Синій</string>
     <string name="result">Результат</string>
 
+    <string name="header_color_choose">Утиліта для вибору кольору</string>
+    <string name="choose">Вибрати колір</string>
 </resources>
