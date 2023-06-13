@@ -77,26 +77,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <EditText
+<!--    <EditText-->
+<!--        android:id="@+id/result"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="text"-->
+<!--        android:autofillHints=""-->
+<!--        android:fontFamily="@font/montserrat_extrabold"-->
+<!--        android:textColorHint="@color/hint"-->
+<!--        android:textSize="25sp"-->
+<!--        android:hint="@string/result" />-->
+
+    <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:autofillHints=""
-        android:fontFamily="@font/montserrat_extrabold"
-        android:textColorHint="@color/hint"
-        android:textSize="25sp"
-        android:hint="@string/result" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/convert"
-        android:layout_width="match_parent"
-        app:cornerRadius="0dp"
-        android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_extrabold"
         android:textSize="30sp"
-        android:textAllCaps="true"
-        android:text="@string/convert" />
+        android:textAlignment="center"
+        />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/convert"-->
+<!--        android:layout_width="match_parent"-->
+<!--        app:cornerRadius="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/montserrat_extrabold"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:text="@string/convert" />-->
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
