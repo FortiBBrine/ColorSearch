@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         MaterialButton util1 = findViewById(R.id.util1);
         MaterialButton util2 = findViewById(R.id.util2);
-        MaterialButton util3 = findViewById(R.id.util3);
 
         util1.setOnClickListener(view -> {
             Intent intent = new Intent(this, OppositeColorActivity.class);
@@ -28,9 +27,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        util3.setOnClickListener(view -> {
-            Intent intent = new Intent(this, ChooseColorActivity.class);
-            startActivity(intent);
-        });
     }
 }

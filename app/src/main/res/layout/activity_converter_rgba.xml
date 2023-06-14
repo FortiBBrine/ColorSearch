@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ConverterRGBAActivity">
+
+    <TextView
+        android:id="@+id/rgba_to_hex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_converter_rgba"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/rgba_to_hex" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_converter_rgba"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/red" />
+
+    <SeekBar
+        android:id="@+id/red"
+        android:max="255"
+        android:progress="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/green_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_converter_rgba"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/green" />
+
+    <SeekBar
+        android:id="@+id/green"
+        android:max="255"
+        android:progress="125"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/blue_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_converter_rgba"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/blue" />
+
+    <SeekBar
+        android:id="@+id/blue"
+        android:max="255"
+        android:progress="125"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/alpha_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/header_converter_rgba"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:text="@string/alpha" />
+
+    <SeekBar
+        android:id="@+id/alpha"
+        android:max="100"
+        android:progress="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
