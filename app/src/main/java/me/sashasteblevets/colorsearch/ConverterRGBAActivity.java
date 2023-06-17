@@ -48,6 +48,7 @@ public class ConverterRGBAActivity extends AppCompatActivity {
         long alphaColor = Math.round((alpha.getProgress() / 100.0) * 255);
 
         String hexColor = String.format("#%02X%02X%02X%02X", redColor, greenColor, blueColor, alphaColor);
+        result.setText(hexColor);
         color.setBackgroundColor(Color.parseColor(hexColor));
 
         SeekBar.OnSeekBarChangeListener onSeekBarChangeListener = new SeekBar.OnSeekBarChangeListener() {
@@ -65,6 +66,7 @@ public class ConverterRGBAActivity extends AppCompatActivity {
                 long alphaColor = Math.round((alpha.getProgress() / 100.0) * 255);
 
                 String hexColor = String.format("#%02X%02X%02X%02X", redColor, greenColor, blueColor, alphaColor);
+                result.setText(hexColor);
                 color.setBackgroundColor(Color.parseColor(hexColor));
 
             }
