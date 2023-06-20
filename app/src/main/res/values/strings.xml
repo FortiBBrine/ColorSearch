@@ -5,6 +5,7 @@
     <string name="util1">Протилежний колір</string>
     <string name="util2">Конвертація RGB до HEX</string>
     <string name="util3">Конвертація RGBA до HEX</string>
+    <string name="util4">Конвертація з HEX до RGB/RGBA</string>
 
     <string name="header_opposite">Утиліта для протилежного кольору</string>
     <string name="back">Повернутись назад</string>
@@ -22,4 +23,6 @@
 
     <string name="alpha">Альфа</string>
 
+    <string name="revert">Конвертація з HEX до RGB/RGBA</string>
+    <string name="input_revert">Колір в форматі HEX</string>
 </resources>

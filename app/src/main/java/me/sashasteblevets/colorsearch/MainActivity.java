@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         MaterialButton util1 = findViewById(R.id.util1);
         MaterialButton util2 = findViewById(R.id.util2);
         MaterialButton util3 = findViewById(R.id.util3);
+        MaterialButton util4 = findViewById(R.id.util4);
 
         util1.setOnClickListener(view -> {
             Intent intent = new Intent(this, OppositeColorActivity.class);
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         util3.setOnClickListener(view -> {
             Intent intent = new Intent(this, ConverterRGBAActivity.class);
+            startActivity(intent);
+        });
+
+        util4.setOnClickListener(view -> {
+            Intent intent = new Intent(this, RevertActivity.class);
             startActivity(intent);
         });
 

@@ -44,5 +44,14 @@
         android:textSize="20sp"
         android:text="@string/util3" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/util4"
+        android:layout_width="match_parent"
+        app:cornerRadius="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:textSize="20sp"
+        android:text="@string/util4" />
+
 
 </LinearLayout>
